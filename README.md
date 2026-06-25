@@ -16,7 +16,7 @@ output_image = sys.argv[2]
 img = Image.open(input_image)
 
 # 画像の左右反転
-imp_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 # 画像の保存
 img_flip.save(output_image)
